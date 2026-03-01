@@ -30,7 +30,7 @@ void WorkerManager::ShowMenu()
     std::cout << std::endl;
 }
 
-// 推退出功能
+// 退出功能
 void WorkerManager::ExitSystem()
 {
     std::cout << "欢迎下次使用" << std::endl;
