@@ -1,2 +1,2 @@
-C:\mingw64\bin\ar.exe qc ..\lib\libworkerManager_lib.a CMakeFiles/workerManager_lib.dir/workManager.cpp.obj
+C:\mingw64\bin\ar.exe qc ..\lib\libworkerManager_lib.a CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj
 C:\mingw64\bin\ranlib.exe ..\lib\libworkerManager_lib.a

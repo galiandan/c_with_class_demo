@@ -129,29 +129,29 @@ workerManager_lib/fast:
 	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/build
 .PHONY : workerManager_lib/fast
 
-workManager.obj: workManager.cpp.obj
-.PHONY : workManager.obj
+workerManager.obj: workerManager.cpp.obj
+.PHONY : workerManager.obj
 
 # target to build an object file
-workManager.cpp.obj:
-	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj
-.PHONY : workManager.cpp.obj
+workerManager.cpp.obj:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj
+.PHONY : workerManager.cpp.obj
 
-workManager.i: workManager.cpp.i
-.PHONY : workManager.i
+workerManager.i: workerManager.cpp.i
+.PHONY : workerManager.i
 
 # target to preprocess a source file
-workManager.cpp.i:
-	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.i
-.PHONY : workManager.cpp.i
+workerManager.cpp.i:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.i
+.PHONY : workerManager.cpp.i
 
-workManager.s: workManager.cpp.s
-.PHONY : workManager.s
+workerManager.s: workerManager.cpp.s
+.PHONY : workerManager.s
 
 # target to generate assembly for a file
-workManager.cpp.s:
-	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.s
-.PHONY : workManager.cpp.s
+workerManager.cpp.s:
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake && $(MAKE) $(MAKESILENT) -f workerManager\CMakeFiles\workerManager_lib.dir\build.make workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.s
+.PHONY : workerManager.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... workerManager_lib
-	@echo ... workManager.obj
-	@echo ... workManager.i
-	@echo ... workManager.s
+	@echo ... workerManager.obj
+	@echo ... workerManager.i
+	@echo ... workerManager.s
 .PHONY : help
 
 

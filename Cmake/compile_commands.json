@@ -7,9 +7,9 @@
 },
 {
   "directory": "E:/code/c_c++/c_with_class_demo/Cmake/workerManager",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/workerManager_lib.dir/includes_CXX.rsp -g -std=gnu++11 -Wall -Wextra -Werror -g -o CMakeFiles\\workerManager_lib.dir\\workManager.cpp.obj -c E:\\code\\c_c++\\c_with_class_demo\\workerManager\\workManager.cpp",
-  "file": "E:/code/c_c++/c_with_class_demo/workerManager/workManager.cpp",
-  "output": "workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj"
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/workerManager_lib.dir/includes_CXX.rsp -g -std=gnu++11 -Wall -Wextra -Werror -g -o CMakeFiles\\workerManager_lib.dir\\workerManager.cpp.obj -c E:\\code\\c_c++\\c_with_class_demo\\workerManager\\workerManager.cpp",
+  "file": "E:/code/c_c++/c_with_class_demo/workerManager/workerManager.cpp",
+  "output": "workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj"
 },
 {
   "directory": "E:/code/c_c++/c_with_class_demo/Cmake/member",

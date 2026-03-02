@@ -130,7 +130,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "workerManager/workManager.cpp",
+			"path" : "workerManager/workerManager.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

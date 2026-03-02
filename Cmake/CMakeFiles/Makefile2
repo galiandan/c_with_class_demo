@@ -126,8 +126,8 @@ workerManager/clean: workerManager/CMakeFiles/workerManager_lib.dir/clean
 # Target rules for target CMakeFiles/WorkerManager.dir
 
 # All Build rule for target.
-CMakeFiles/WorkerManager.dir/all: workerManager/CMakeFiles/workerManager_lib.dir/all
 CMakeFiles/WorkerManager.dir/all: member/CMakeFiles/member_lib.dir/all
+CMakeFiles/WorkerManager.dir/all: workerManager/CMakeFiles/workerManager_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WorkerManager.dir\build.make CMakeFiles/WorkerManager.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WorkerManager.dir\build.make CMakeFiles/WorkerManager.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=1,2 "Built target WorkerManager"

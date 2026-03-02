@@ -1,5 +1,5 @@
-workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj: \
- E:\code\c_c++\c_with_class_demo\workerManager\workManager.cpp \
+workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj: \
+ E:\code\c_c++\c_with_class_demo\workerManager\workerManager.cpp \
  E:\code\c_c++\c_with_class_demo\workerManager\workerManager.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -126,4 +126,8 @@ workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+ E:/code/c_c++/c_with_class_demo/member/worker.h \
+ E:/code/c_c++/c_with_class_demo/member/employee.h \
+ E:/code/c_c++/c_with_class_demo/member/manager.h \
+ E:/code/c_c++/c_with_class_demo/member/boss.h

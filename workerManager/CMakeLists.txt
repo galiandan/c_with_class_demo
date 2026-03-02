@@ -1,6 +1,6 @@
 # 1. 直接定义库并列出文件
 add_library(workerManager_lib STATIC 
-    workManager.cpp 
+    workerManager.cpp 
     workerManager.h
 )
 

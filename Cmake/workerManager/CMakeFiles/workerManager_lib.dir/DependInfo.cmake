@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/code/c_c++/c_with_class_demo/workerManager/workManager.cpp" "workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj" "gcc" "workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj.d"
+  "E:/code/c_c++/c_with_class_demo/workerManager/workerManager.cpp" "workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj" "gcc" "workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

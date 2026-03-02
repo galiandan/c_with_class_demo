@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc ..\lib\libworker_lib.a CMakeFiles/worker_lib.dir/employee.cpp.obj
-C:\mingw64\bin\ranlib.exe ..\lib\libworker_lib.a

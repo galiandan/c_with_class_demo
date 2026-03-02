@@ -71,29 +71,29 @@ include workerManager/CMakeFiles/workerManager_lib.dir/flags.make
 workerManager/CMakeFiles/workerManager_lib.dir/codegen:
 .PHONY : workerManager/CMakeFiles/workerManager_lib.dir/codegen
 
-workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj: workerManager/CMakeFiles/workerManager_lib.dir/flags.make
-workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj: workerManager/CMakeFiles/workerManager_lib.dir/includes_CXX.rsp
-workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj: E:/code/c_c++/c_with_class_demo/workerManager/workManager.cpp
-workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj: workerManager/CMakeFiles/workerManager_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj"
-	cd /d E:\code\c_c++\c_with_class_demo\Cmake\workerManager && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj -MF CMakeFiles\workerManager_lib.dir\workManager.cpp.obj.d -o CMakeFiles\workerManager_lib.dir\workManager.cpp.obj -c E:\code\c_c++\c_with_class_demo\workerManager\workManager.cpp
+workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj: workerManager/CMakeFiles/workerManager_lib.dir/flags.make
+workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj: workerManager/CMakeFiles/workerManager_lib.dir/includes_CXX.rsp
+workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj: E:/code/c_c++/c_with_class_demo/workerManager/workerManager.cpp
+workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj: workerManager/CMakeFiles/workerManager_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj"
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake\workerManager && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj -MF CMakeFiles\workerManager_lib.dir\workerManager.cpp.obj.d -o CMakeFiles\workerManager_lib.dir\workerManager.cpp.obj -c E:\code\c_c++\c_with_class_demo\workerManager\workerManager.cpp
 
-workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/workerManager_lib.dir/workManager.cpp.i"
-	cd /d E:\code\c_c++\c_with_class_demo\Cmake\workerManager && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\code\c_c++\c_with_class_demo\workerManager\workManager.cpp > CMakeFiles\workerManager_lib.dir\workManager.cpp.i
+workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/workerManager_lib.dir/workerManager.cpp.i"
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake\workerManager && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\code\c_c++\c_with_class_demo\workerManager\workerManager.cpp > CMakeFiles\workerManager_lib.dir\workerManager.cpp.i
 
-workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/workerManager_lib.dir/workManager.cpp.s"
-	cd /d E:\code\c_c++\c_with_class_demo\Cmake\workerManager && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\code\c_c++\c_with_class_demo\workerManager\workManager.cpp -o CMakeFiles\workerManager_lib.dir\workManager.cpp.s
+workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/workerManager_lib.dir/workerManager.cpp.s"
+	cd /d E:\code\c_c++\c_with_class_demo\Cmake\workerManager && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\code\c_c++\c_with_class_demo\workerManager\workerManager.cpp -o CMakeFiles\workerManager_lib.dir\workerManager.cpp.s
 
 # Object files for target workerManager_lib
 workerManager_lib_OBJECTS = \
-"CMakeFiles/workerManager_lib.dir/workManager.cpp.obj"
+"CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj"
 
 # External object files for target workerManager_lib
 workerManager_lib_EXTERNAL_OBJECTS =
 
-lib/libworkerManager_lib.a: workerManager/CMakeFiles/workerManager_lib.dir/workManager.cpp.obj
+lib/libworkerManager_lib.a: workerManager/CMakeFiles/workerManager_lib.dir/workerManager.cpp.obj
 lib/libworkerManager_lib.a: workerManager/CMakeFiles/workerManager_lib.dir/build.make
 lib/libworkerManager_lib.a: workerManager/CMakeFiles/workerManager_lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\code\c_c++\c_with_class_demo\Cmake\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\lib\libworkerManager_lib.a"
