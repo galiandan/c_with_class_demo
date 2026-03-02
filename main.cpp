@@ -7,19 +7,6 @@
 
 int main()
 {
-    // Worker *worker = NULL;
-    // worker = new Employee(1, "zhangsan", 1);
-    // worker->showInfo();
-    // delete worker;
-
-    // worker = new Manager(2, "lisi", 2);
-    // worker->showInfo();
-    // delete worker;
-
-    // worker = new Boss(2, "liuwu", 3);
-    // worker->showInfo();
-    // delete worker;
-
     WorkerManager wm;
     int choice = 0;
     while (true)
