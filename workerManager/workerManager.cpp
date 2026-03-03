@@ -176,6 +176,8 @@ void WorkerManager::Del_Emp()
             if (select == 2)
             {
                 std::cout << "已取消删除" << std::endl;
+                system("pause");
+                system("cls");
                 break;
             }
             for (int i = index; i < this->m_EmpNum - 1; i++)
@@ -184,6 +186,8 @@ void WorkerManager::Del_Emp()
             }
             this->m_EmpNum--;
             std::cout << "删除成功！" << std::endl;
+            system("pause");
+            system("cls");
         }
     }
     break;
@@ -207,12 +211,28 @@ void WorkerManager::Del_Emp()
         }
         else
         {
+            std::cout << "找到职工姓名为" << name << "的职工" << std::endl;
+            std::cout << "信息为：" << std::endl;
+            this->m_EmpArray[index]->showInfo();
+            std::cout << "确认删除吗？" << std::endl;
+            std::cout << "1、确认删除 2、取消删除" << std::endl;
+            int select = 0;
+            std::cin >> select;
+            if (select == 2)
+            {
+                std::cout << "已取消删除" << std::endl;
+                system("pause");
+                system("cls");
+                break;
+            }
             for (int i = index; i < this->m_EmpNum - 1; i++)
             {
                 this->m_EmpArray[i] = this->m_EmpArray[i + 1];
             }
             this->m_EmpNum--;
             std::cout << "删除成功！" << std::endl;
+            system("pause");
+            system("cls");
         }
     }
     break;
