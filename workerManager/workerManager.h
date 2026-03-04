@@ -29,6 +29,15 @@ public:
     // 修改职员信息
     void Mod_Emp();
 
+    // 查找职工信息
+    void Find_Emp();
+
+    // 按照编号排序
+    void Sort_Emp();
+
+    // 清空所有档案
+    void Clean_File();
+
     // 空析构
     ~WorkerManager();
 

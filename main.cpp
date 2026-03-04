@@ -34,10 +34,13 @@ int main()
             wm.Mod_Emp();
             break;
         case 5: // 查找职工信息
+            wm.Find_Emp();
             break;
         case 6: // 按照编号排序
+            wm.Sort_Emp();
             break;
         case 7: // 清空所有档案
+            wm.Clean_File();
             break;
         default:
             system("cls");

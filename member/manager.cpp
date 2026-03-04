@@ -8,7 +8,7 @@ Manager::Manager(int Id, std::string name, int dId)
     this->m_DeptId = dId;
 }
 
-// 显经理人信息
+// 显示职员信息
 void Manager::showInfo()
 {
     std::cout << "职工编号:" << this->m_Id

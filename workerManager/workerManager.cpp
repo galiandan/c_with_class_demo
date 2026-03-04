@@ -292,7 +292,102 @@ void WorkerManager::Mod_Emp()
     }
 }
 
-// 空析构
+// 查找职工信息
+void WorkerManager::Find_Emp()
+{
+    std::cout << "请选择通过1、编号查找 2、姓名查找" << std::endl;
+    int choice = 0;
+    std::cin >> choice;
+    switch (choice)
+    {
+    case 1:
+    {
+        int id;
+        std::cout << "请输入要查找的职工编号：" << std::endl;
+        std::cin >> id;
+        int index = -1;
+        for (int i = 0; i < this->m_EmpNum; i++)
+        {
+            if (this->m_EmpArray[i]->getId() == id)
+            {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1)
+        {
+            std::cout << "未找到该职工编号" << std::endl;
+        }
+        else
+        {
+            std::cout << "找到职工编号为" << id << "的职工" << std::endl;
+            std::cout << "信息为：" << std::endl;
+            this->m_EmpArray[index]->showInfo();
+        }
+    }
+    break;
+    default:
+        break;
+    }
+}
+
+// 按照编号排序
+void WorkerManager::Sort_Emp()
+{
+    for (int i = 0; i < this->m_EmpNum - 1; i++)
+    {
+        for (int j = 0; j < this->m_EmpNum - 1 - i; j++)
+        {
+            if (this->m_EmpArray[j]->getId() > this->m_EmpArray[j + 1]->getId())
+            {
+                Worker *temp = this->m_EmpArray[j];
+                this->m_EmpArray[j] = this->m_EmpArray[j + 1];
+                this->m_EmpArray[j + 1] = temp;
+            }
+        }
+    }
+    std::cout << "排序成功！" << std::endl;
+    system("pause");
+    system("cls");
+}
+
+// 清空所有档案
+void WorkerManager::Clean_File()
+{
+    if (this->m_EmpArray != NULL)
+    {
+        std::cout << "确认清空吗？" << std::endl;
+        std::cout << "1、确认清空 2、取消清空" << std::endl;
+        int select = 0;
+        std::cin >> select;
+        if (select == 2)
+        {
+            std::cout << "已取消清空" << std::endl;
+            system("pause");
+            system("cls");
+            return;
+        }
+
+        for (int i = 0; i < this->m_EmpNum; i++)
+        {
+            delete this->m_EmpArray[i];
+            this->m_EmpArray[i] = NULL;
+        }
+        delete[] this->m_EmpArray;
+        this->m_EmpArray = NULL;
+        this->m_EmpNum = 0;
+        std::cout << "清空成功！" << std::endl;
+        system("pause");
+        system("cls");
+    }
+    else
+    {
+        std::cout << "当前没有数据！" << std::endl;
+        system("pause");
+        system("cls");
+    }
+}
+// 析构
 WorkerManager::~WorkerManager()
 {
     if (this->m_EmpArray != NULL)
