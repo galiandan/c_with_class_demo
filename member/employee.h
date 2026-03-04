@@ -13,7 +13,7 @@ public:
     virtual void showInfo() override;
 
     // 获取岗位名称
-    virtual std::string getDpetName() override;
+    virtual std::string getDeptName() override;
 
     // 获得个人ID
     virtual int getId() override;

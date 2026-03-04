@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <fstream>
+#include <string>
 #include "../member/worker.h"
 #include "../member/employee.h"
 #include "../member/manager.h"
@@ -10,6 +12,12 @@ class WorkerManager
 public:
     // 空构造
     WorkerManager();
+
+    // 从文件中读取数据
+    void readFile();
+
+    // 向文件中心写入数据
+    void writeFile();
 
     // 展示菜单
     void ShowMenu();
@@ -43,6 +51,5 @@ public:
 
 protected:
     int m_EmpNum;
-
     Worker **m_EmpArray;
 };

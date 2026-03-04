@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <fstream>
 
 class Worker
 {
@@ -9,7 +10,7 @@ public:
     virtual void showInfo() = 0;
 
     // 获取岗位名称
-    virtual std::string getDpetName() = 0;
+    virtual std::string getDeptName() = 0;
 
     // 获得个人ID
     virtual int getId() = 0;

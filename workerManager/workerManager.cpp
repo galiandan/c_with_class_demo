@@ -1,5 +1,4 @@
 #include "workerManager.h"
-
 // 构造
 WorkerManager::WorkerManager()
 {
@@ -7,6 +6,93 @@ WorkerManager::WorkerManager()
     this->m_EmpArray = NULL;
 }
 
+// 从文件中读取数据
+void WorkerManager::readFile()
+{
+    std::fstream fs;
+    fs.open("E:\\code\\c_c++\\c_with_class_demo\\Date.txt", std::ios::in);
+
+    if (!fs.is_open())
+    {
+        std::cout << "文件不存在或打开失败" << std::endl;
+        this->m_EmpNum = 0;
+        this->m_EmpArray = NULL;
+        return;
+    }
+
+    int id;
+    std::string name;
+    std::string deptId;
+    int num = 0;
+
+    while (fs >> id >> name >> deptId)
+    {
+        num++;
+    }
+
+    this->m_EmpNum = num;
+
+    if (this->m_EmpNum == 0)
+    {
+        this->m_EmpArray = NULL;
+        fs.close();
+        return;
+    }
+
+    this->m_EmpArray = new Worker *[this->m_EmpNum];
+
+    fs.clear();
+    fs.seekg(0, std::ios::beg);
+
+    int index = 0;
+    while (fs >> id >> name >> deptId)
+    {
+        Worker *worker = NULL;
+        int deptNum = 0;
+
+        if (deptId == "员工")
+        {
+            deptNum = 1;
+            worker = new Employee(id, name, deptNum);
+        }
+        else if (deptId == "经理")
+        {
+            deptNum = 2;
+            worker = new Manager(id, name, deptNum);
+        }
+        else
+        {
+            deptNum = 3;
+            worker = new Boss(id, name, deptNum);
+        }
+
+        this->m_EmpArray[index] = worker;
+        index++;
+    }
+
+    fs.close();
+}
+// 向文件中写入数据
+void WorkerManager::writeFile()
+{
+    std::fstream fs;
+    fs.open("E:\\code\\c_c++\\c_with_class_demo\\Date.txt", std::ios::out);
+
+    if (!fs.is_open())
+    {
+        std::cout << "文件打开失败" << std::endl;
+        return;
+    }
+
+    for (int i = 0; i < this->m_EmpNum; i++)
+    {
+        fs << this->m_EmpArray[i]->getId() << " "
+           << this->m_EmpArray[i]->getName() << " "
+           << this->m_EmpArray[i]->getDeptName() << std::endl;
+    }
+
+    fs.close();
+}
 // 展示菜单
 void WorkerManager::ShowMenu()
 {
@@ -42,6 +128,7 @@ void WorkerManager::ExitSystem()
 // 添加职工
 void WorkerManager::Add_Emp()
 {
+    WorkerManager::readFile();
     while (1)
     {
         std::cout << "请输入添加的职工的数量" << std::endl;
@@ -114,6 +201,7 @@ void WorkerManager::Add_Emp()
             std::cout << "输入有误" << std::endl;
         }
     }
+    WorkerManager::writeFile();
     system("pause");
     system("cls");
 }
@@ -121,6 +209,7 @@ void WorkerManager::Add_Emp()
 // 显示职工信息
 void WorkerManager::show_Emp()
 {
+    WorkerManager::readFile();
     if (this->m_EmpNum == 0)
     {
         std::cout << "还未添加职工" << std::endl;
@@ -133,6 +222,7 @@ void WorkerManager::show_Emp()
             this->m_EmpArray[i]->showInfo();
         }
     }
+    WorkerManager::writeFile();
     system("pause");
     system("cls");
 }
@@ -140,6 +230,7 @@ void WorkerManager::show_Emp()
 // 删除离职员工
 void WorkerManager::Del_Emp()
 {
+    WorkerManager::readFile();
     int choice = 0;
     std::cout << "请选择删除方式" << std::endl;
     std::cout << "1、按照编号删除 2、按照姓名删除 3、取消删除操作" << std::endl;
@@ -188,6 +279,7 @@ void WorkerManager::Del_Emp()
             }
             this->m_EmpNum--;
             std::cout << "删除成功！" << std::endl;
+            WorkerManager::writeFile();
             system("pause");
             system("cls");
         }
@@ -235,6 +327,7 @@ void WorkerManager::Del_Emp()
             }
             this->m_EmpNum--;
             std::cout << "删除成功！" << std::endl;
+            WorkerManager::writeFile();
             system("pause");
             system("cls");
         }
@@ -254,6 +347,7 @@ void WorkerManager::Del_Emp()
 // 修改职员信息
 void WorkerManager::Mod_Emp()
 {
+    WorkerManager::readFile();
     std::cout << "请选择通过1、编号查找修改 2、姓名查找修改" << std::endl;
     int choice = 0;
     std::cin >> choice;
@@ -283,6 +377,7 @@ void WorkerManager::Mod_Emp()
             this->m_EmpArray[index]->modDept();
             this->m_EmpArray[index]->modId();
             std::cout << "修改成功！" << std::endl;
+            WorkerManager::writeFile();
             system("pause");
         }
     }
@@ -295,6 +390,7 @@ void WorkerManager::Mod_Emp()
 // 查找职工信息
 void WorkerManager::Find_Emp()
 {
+    WorkerManager::readFile();
     std::cout << "请选择通过1、编号查找 2、姓名查找" << std::endl;
     int choice = 0;
     std::cin >> choice;
@@ -323,6 +419,7 @@ void WorkerManager::Find_Emp()
             std::cout << "找到职工编号为" << id << "的职工" << std::endl;
             std::cout << "信息为：" << std::endl;
             this->m_EmpArray[index]->showInfo();
+            WorkerManager::writeFile();
         }
     }
     break;
@@ -334,6 +431,7 @@ void WorkerManager::Find_Emp()
 // 按照编号排序
 void WorkerManager::Sort_Emp()
 {
+    WorkerManager::readFile();
     for (int i = 0; i < this->m_EmpNum - 1; i++)
     {
         for (int j = 0; j < this->m_EmpNum - 1 - i; j++)
@@ -347,6 +445,7 @@ void WorkerManager::Sort_Emp()
         }
     }
     std::cout << "排序成功！" << std::endl;
+    WorkerManager::writeFile();
     system("pause");
     system("cls");
 }
@@ -354,6 +453,7 @@ void WorkerManager::Sort_Emp()
 // 清空所有档案
 void WorkerManager::Clean_File()
 {
+    WorkerManager::readFile();
     if (this->m_EmpArray != NULL)
     {
         std::cout << "确认清空吗？" << std::endl;
@@ -377,6 +477,7 @@ void WorkerManager::Clean_File()
         this->m_EmpArray = NULL;
         this->m_EmpNum = 0;
         std::cout << "清空成功！" << std::endl;
+        WorkerManager::writeFile();
         system("pause");
         system("cls");
     }
@@ -387,6 +488,7 @@ void WorkerManager::Clean_File()
         system("cls");
     }
 }
+
 // 析构
 WorkerManager::~WorkerManager()
 {

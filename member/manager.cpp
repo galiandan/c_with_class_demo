@@ -13,12 +13,12 @@ void Manager::showInfo()
 {
     std::cout << "职工编号:" << this->m_Id
               << "\t职工姓名:" << this->m_Name
-              << "\t岗位:" << this->getDpetName()
+              << "\t岗位:" << this->getDeptName()
               << "\t岗位职责：完成老板交给的任务，并下发给员工" << std::endl;
 }
 
 // 获取岗位名称
-std::string Manager::getDpetName()
+std::string Manager::getDeptName()
 {
     return std::string("经理");
 }
