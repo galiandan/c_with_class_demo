@@ -10,7 +10,7 @@ WorkerManager::WorkerManager()
 void WorkerManager::readFile()
 {
     std::fstream fs;
-    fs.open("E:\\code\\c_c++\\c_with_class_demo\\Date.txt", std::ios::in);
+    fs.open("Date.txt", std::ios::in);
 
     if (!fs.is_open())
     {
@@ -77,7 +77,7 @@ void WorkerManager::readFile()
 void WorkerManager::writeFile()
 {
     std::fstream fs;
-    fs.open("E:\\code\\c_c++\\c_with_class_demo\\Date.txt", std::ios::out);
+    fs.open("Date.txt", std::ios::out);
 
     if (!fs.is_open())
     {
