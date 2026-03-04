@@ -51,5 +51,6 @@ public:
 
 protected:
     int m_EmpNum;
+
     Worker **m_EmpArray;
 };

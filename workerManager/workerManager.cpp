@@ -72,6 +72,7 @@ void WorkerManager::readFile()
 
     fs.close();
 }
+
 // 向文件中写入数据
 void WorkerManager::writeFile()
 {
@@ -93,6 +94,7 @@ void WorkerManager::writeFile()
 
     fs.close();
 }
+
 // 展示菜单
 void WorkerManager::ShowMenu()
 {
